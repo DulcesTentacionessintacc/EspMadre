@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dolce Tentazione Sin T.a.c.c.</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form id="tortas" action="" class="formulario" name="tortas" required=""> 
+      <img src="Logo.png" class="imgLogo" />
+
+      <h1 class="formulario__titulo">TORTAS CLÁSICAS</h1>
+      <h3 class="formulario__subtitulo">PEDIDO</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para agendar su pedido
+      </p>
+
+      <label for="relleno1" class="formulario__label"
+        >ELIJA EL TIPO DE TORTA</label
+      >
+      <select id="listacremas" name="listacremas" class="formulario__input2" required="" onchange="javascript: cambia_cremas(this.options[this.selectedIndex].value); precio()">
+        <option value="">-- SELECCIONE UN TIPO DE TORTA --</option>
+        <option value="ESTANDAR">ESTANDAR</option>
+        <option value="ROGEL">ROGEL</option>
+        <option value="CHAJA">CHAJA</option>
+        <option value="SELVA NEGRA">SELVA NEGRA</option>
+        <option value="MOCCA">MOCCA</option>
+        <option value="FRUTILLA">FRUTILLA</option>
+      </select>
+      <p>
+        <h4 id="des1" class="formulario__label2"></h4>
+      </p>
+      <div id="imagenTorta" class="formulario__imagen">
+      </div>
+     
+      <label for="relleno2" class="formulario__label"
+        >TAMAÑO DE LA TORTA</label>
+      
+        <select id="cremas" name="cremas" class="formulario__input" onchange="precio()" >
+          <option value="">-- ELIJA UN TAMAÑO --</option>
+         </select>
+
+      <label for="tamaño" class="formulario__label"
+        >FECHA DE ENTREGA</label>
+
+      <input id="fechas" name="fechas" type="date" class="formulario__input" required=""></input>
+
+      <label for="tamaño" class="formulario__label"
+        >HORARIO</label>
+ 
+      <select id="horario" name="horario" class="formulario__input" required="">
+        <option>-- ELIJA --</option>
+        <option value="ANTES DEL MEDIODIA">ANTES DEL MEDIODIA</option>
+        <option value="DESPUES DEL MEDIODIA">DESPUES DEL MEDIODIA</option>
+      </select>
+
+    <p>
+      <h2 id="salida" class="formulario__label2"></h2>
+    </p>
+         
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        required=""
+        placeholder="Indica cuál es tu nombre completo"
+      />
+      <h3 class="formulario__subtitulo2">PARA RESERVAR DEBE SEÑAR</h3>
+      <h3 class="formulario__subtitulo2">EL 50% DE LA TORTA</h3>
+
+      <img src="1.png" class="imgbank" />
+     
+      <div id="respuesta" class="formulario__label2"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
