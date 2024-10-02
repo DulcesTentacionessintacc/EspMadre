@@ -54,10 +54,11 @@ document.querySelector("#submit").addEventListener("click", e => {
 
   let url = `https://api.whatsapp.com/send?phone=${telefono}&text=
 		--DOLCE TENTAZIONE SIN TACC--%0A
+                --ESPECIAL DIA DE LA MADRE--%0A
 		*PEDIDO*%0A%0A
 		*¿Cuál es tu nombre?*%0A
 		${cliente}%0A%0A
-		*Indica el tipo de torta*%0A
+		*Indica el pedido*%0A
 		${listacremas}%0A%0A
     *FECHA DE ENTREGA*%0A
 		${fechas}%0A%0A
