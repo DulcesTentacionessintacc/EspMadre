@@ -3,77 +3,21 @@ function cambia_cremas(listindex)
 {
 
 document.tortas.cremas.options.length = 0;
-switch (listindex)
-{
-
-case "ESTANDAR" :
-document.tortas.cremas.options[0]=new Option("-- ELIJA UN TAMAÑO --","-- ELIJA UN TAMAÑO --");
-document.tortas.cremas.options[1]=new Option("8 PORCIONES","8 PORCIONES");
-document.tortas.cremas.options[2]=new Option("15 PORCIONES","15 PORCIONES");
-document.tortas.cremas.options[3]=new Option("22 PORCIONES","22 PORCIONES");
-document.tortas.cremas.options[4]=new Option("28 PORCIONES","28 PORCIONES");
-
-break;
-
-case "ROGEL" :
-document.tortas.cremas.options[0]=new Option("-- ELIJA UN TAMAÑO --","-- ELIJA UN TAMAÑO --");
-document.tortas.cremas.options[1]=new Option("13 CM","13 CM");
-document.tortas.cremas.options[2]=new Option("22 CM","22 CM");
-document.tortas.cremas.options[3]=new Option("30 CM","30 CM");
-  
-break;
-
-case "CHAJA" :
-document.tortas.cremas.options[0]=new Option("-- ELIJA UN TAMAÑO --","-- ELIJA UN TAMAÑO --");
-document.tortas.cremas.options[1]=new Option("12 PORCIONES","12 PORCIONES");
-document.tortas.cremas.options[2]=new Option("20 PORCIONES","20 PORCIONES");
-document.tortas.cremas.options[3]=new Option("25 PORCIONES","25 PORCIONES");
-
-break;
-
-case "SELVA NEGRA" :
-document.tortas.cremas.options[0]=new Option("-- ELIJA UN TAMAÑO --","-- ELIJA UN TAMAÑO --");
-document.tortas.cremas.options[1]=new Option("8 PORCIONES","8 PORCIONES");
-document.tortas.cremas.options[2]=new Option("15 PORCIONES","15 PORCIONES");
-document.tortas.cremas.options[3]=new Option("22 PORCIONES","22 PORCIONES");
-
-break;
-
-case "MOCCA" :
-document.tortas.cremas.options[0]=new Option("-- ELIJA UN TAMAÑO --","-- ELIJA UN TAMAÑO --");
-document.tortas.cremas.options[1]=new Option("12 PORCIONES","12 PORCIONES");
-document.tortas.cremas.options[2]=new Option("20 PORCIONES","20 PORCIONES");
-document.tortas.cremas.options[3]=new Option("25 PORCIONES","25 PORCIONES");
-
-break;
-
-case "FRUTILLA" :
-document.tortas.cremas.options[0]=new Option("-- ELIJA UN TAMAÑO --","-- ELIJA UN TAMAÑO --");
-document.tortas.cremas.options[1]=new Option("12 PORCIONES","12 PORCIONES");
-document.tortas.cremas.options[2]=new Option("20 PORCIONES","20 PORCIONES");
-document.tortas.cremas.options[3]=new Option("25 PORCIONES","25 PORCIONES");
-
-break;
-
-}
-return true;
-}
 
  //RELLENOS CON BIZCOCHUELO DE VAINILLA + DULCE DE LECHE REPOSTERO + 10 PORCIONES
 
  function precio(){
    
   let listacremas = document.querySelector("#listacremas").value;
-  let cremas = document.querySelector("#cremas").value;  0
    
   
-if(listacremas == "ESTANDAR" && cremas == "8 PORCIONES"){
+if(listacremas == "TORTA FRUTAL"){
   document.getElementById("salida").innerHTML = "$20850";
 }
-else if (listacremas == "ESTANDAR" && cremas == "15 PORCIONES"){
+else if (listacremas == "BOX DESAYUNO"){
   document.getElementById("salida").innerHTML = "$27350";
 }
-else if (listacremas == "ESTANDAR" && cremas == "22 PORCIONES"){
+else if (listacremas == "BENTO CAKE + CUPCAKES"){
   document.getElementById("salida").innerHTML = "$34000";
 }
 else if (listacremas == "ESTANDAR" && cremas == "28 PORCIONES"){
@@ -140,12 +84,12 @@ else if (listacremas == "CHAJA"){
   document.getElementById("des1").innerHTML = "BIZCOCHUELO DE VAINILLA<br><br>2 RELLENOS:<br><br>1- DULCE DE LECHE REPOSTERO CON MERENGUITOS<br><br>2- CREMA DE LECHE CON DURAZNO<br><br>DECORACION: MERENGUE CON MERENGUITOS";
  imagenTorta.innerHTML = '<img src="chaja.jpg" alt="Torta Rogel" class="imgTorta" />';
 }
-else if (listacremas == "ROGEL"){
-  document.getElementById("des1").innerHTML = "MASA TIPO HOJALDRE<br><br>DULCE DE LECHE REPOSTERO<br><br>MERENGUE ITALIANO";
+else if (listacremas == "BOX DESAYUNO"){
+  document.getElementById("des1").innerHTML = "1 MEDIALUNA DE MANTECA<br><br>DULCE DE LECHE REPOSTERO<br><br>MERENGUE ITALIANO";
   imagenTorta.innerHTML = '<img src="rogelf.jpg" alt="Torta Rogel" class="imgTorta" />';
 }
-else if (listacremas == "ESTANDAR"){
-  document.getElementById("des1").innerHTML = "BIZCOCHUELO DE VAINILLA<br><br>RELLENO: COMBINADO DE DULCE DE LECHE REPOSTERO CON CREMA DE LECHE<br><br>DECORACION: MERENGUE ITALIANO";
+else if (listacremas == "TORTA FRUTAL"){
+  document.getElementById("des1").innerHTML = "BIZCOCHUELO DE VAINILLA<br><br>RELLENO:DULCE DE LECHE REPOSTERO <br><br>CREMA DE LECHE<br><br>FRUTAS (FRUTILLA - KIWI - DURAZNO)";
   imagenTorta.innerHTML = '<img src="estandar.jpg" alt="Torta Rogel" class="imgTorta" />';
 }
 
