@@ -22,7 +22,7 @@
       </p>
 
       <label for="relleno1" class="formulario__label"
-        >ELIJA EL TIPO DE TORTA</label
+        >ELIJA EL PEDIDO</label
       >
       <select id="listacremas" name="listacremas" class="formulario__input2" required="" onchange="javascript: cambia_cremas(this.options[this.selectedIndex].value); precio()">
         <option value="">-- SELECCIONE EL PEDIDO --</option>
@@ -36,14 +36,7 @@
       <div id="imagenTorta" class="formulario__imagen">
       </div>
      
-      <label for="relleno2" class="formulario__label"
-        >TAMAÑO DE LA TORTA</label>
-      
-        <select id="cremas" name="cremas" class="formulario__input" onchange="precio()" >
-          <option value="">-- ELIJA UN TAMAÑO --</option>
-         </select>
-
-      <label for="tamaño" class="formulario__label"
+       <label for="tamaño" class="formulario__label"
         >FECHA DE ENTREGA</label>
 
       <input id="fechas" name="fechas" type="date" class="formulario__input" required=""></input>
