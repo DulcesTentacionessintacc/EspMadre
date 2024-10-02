@@ -4,11 +4,9 @@ function cambia_cremas(listindex)
 
 document.tortas.cremas.options.length = 0;
 
- //RELLENOS CON BIZCOCHUELO DE VAINILLA + DULCE DE LECHE REPOSTERO + 10 PORCIONES
-
- function precio(){
+function precio(){
    
-  let listacremas = document.querySelector("#listacremas").value;
+let listacremas = document.querySelector("#listacremas").value;
    
   
 if(listacremas == "TORTA FRUTAL"){
@@ -34,6 +32,7 @@ else if (listacremas == "TORTA FRUTAL"){
 }
 
 else{}
+}
 }
 
 document.querySelector("#submit").addEventListener("click", e => {
